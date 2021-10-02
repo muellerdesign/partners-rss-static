@@ -1,0 +1,109 @@
+/*
+Theme Name: Partners RSS - BB child
+Theme URI: https://transmitstudio.com
+Version: 1.0
+Description: Child theme for Beaver Builder Theme
+Author: Dave Kuhar
+Author URI: http://davekuhar.com
+template: bb-theme
+*/
+
+/* Add your custom styles here... */ 
+
+/* 
+	row to relative
+	foreground to z2
+	background to z1	
+*/
+
+/* make the overlay row thingy work */
+/* apply negative right margin to text or heading module in left column */
+
+/* apply this to row */
+.relative {
+    position: relative;
+}
+
+/* apply to background */
+.z1 {
+    z-index: 1;
+}
+
+/* apply to foreground – add negative margin to module that should overlay */
+.z2 {
+    z-index: 2;
+}
+
+.z2absolute {
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    height: 100px;
+    width: 100vw;
+    left: 0;
+}
+
+.max620 {
+	max-width: 560px;
+}
+
+.bicolor-head .fl-callout-title-text span {
+    font-weight: 300;
+    color: white;
+}
+
+/* footer menu item with copyright shouldn't look like a link */
+#menu-item-34 a:hover {
+	 color: inherit;
+	 cursor: default;
+}
+
+.fl-page-nav-search form {
+	background-color: rgba(255,255,255,.8);
+}
+
+h3.popover-title {
+	font-size: 36px !important;
+	font-weight: 900;
+	font-family: "PT Sans", sans-serif;
+}
+
+ul.popover-list li {
+	font-size: 28px !important;
+	line-height: 1.4;
+	font-family: "PT Sans", sans-serif;
+}
+
+@media only screen and (max-width: 991px){
+	h3.popover-title {
+		font-size: 20px !important;
+		font-weight: 900;
+		font-family: "PT Sans", sans-serif;
+	}
+	
+	ul.popover-list li {
+		font-size: 16px !important;
+		line-height: 1.4;
+		font-family: "PT Sans", sans-serif;
+	}
+}
+
+
+@media only screen and (min-width: 992px ){
+	.add-search-icon .fl-module-content .menu {
+		margin-right: 10px;
+	}
+
+	.fl-row-content-wrap .fl-page-nav-search {
+		margin-top: 20px;
+	}
+
+	.fl-row-content-wrap .fl-page-nav-search a {
+		color: #99a4ae;
+	}
+	
+	.fl-page-nav-search a.fa-search {
+		top: 0px;
+	}
+	
+}
